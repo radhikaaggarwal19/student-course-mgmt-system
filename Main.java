@@ -1,8 +1,6 @@
 /*
  * Name: Radhika Aggarwal
- * Class & Section: ITSS 3312.002
- * Instructor: Prof. Khan
- * Assignment: Project 3
+ * 
  */
 
 package project3;
