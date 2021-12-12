@@ -1,0 +1,48 @@
+I analyzed this program as a database that holds information about students, their employment and the courses offered in the school. 
+For this purpose, I made use of a main class, two interfaces (each implemented by a class each) and a subclass for one of the classes. 
+In terms of recording the data, the student data was stored in an object array and the course data was stored in text files. 
+I created different methods for each function to simplify the code and to make it efficient by means of reusability. 
+
+I also implemented multiple error handling instances in order to make the code more robust and fault-tolerant.
+
+--Design
+
+I tried to keep my main() method as simple as possible. 
+I made use of multiple classes, methods, and interfaces to divide the code into modules and make it easier to follow.
+
+  -	Main class
+        Display the introduction and read the number of the students from the user
+        I kept all the variables that are common to the entire program in the main method so that the values don’t change every time a new method is called.
+        Create 2 object arrays- one to hold student data and the other to hold data about student employees
+        Then I had a while loop displaying the main menu till the user wants to exit the system
+        Within the while loop, I had a switch statement to call the correct method based on the option chosen by the user
+        I had all the methods for the different functions in the SMS and CMS in the main class
+
+  -	Student_interface
+        This was implemented by the Student Class
+        
+  -	Course_interface
+        This was implemented by the Course Class
+        
+  -	Student class
+        This class implements the student_interface
+        It is used to make objects for the Student[] array
+        It has a default constructor, variables for the different data categories for each student
+        It also has a toString() method and a couple of getters
+        
+  -	Student_Employee class
+        This class is a subclass of the Student Class
+        It has some additional variables for student employees and inherits the other variables from the student class
+        This class is used to make objects for the Student_Employee[] array
+        
+-	Course class
+        I used this class to further implement the functions for the CMS and then I simply called the methods from this class using objects in the main class
+        This class has a default constructor, the variables for course info, and methods for the functions in CMS. 
+        I also had to use different ways of reading from and writing to files.
+
+
+--Testing
+This program required a lot of testing to make sure that all the different methods and components were working together properly. 
+I tested all the methods separately. I also tested the program by switching between SMS and CMS to check if the results are consistent. 
+I had to test for the file input and output to ensure that the results in the file are consistent with those on the console. 
+I also tested the flexibility of the program by putting in different inputs and handling any errors as they appeared. 
